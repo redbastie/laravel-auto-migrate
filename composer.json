@@ -1,0 +1,29 @@
+{
+    "name": "redbastie/laravel-auto-migrate",
+    "description": "Automatic migrations for your Laravel models.",
+    "homepage": "https://github.com/redbastie/laravel-auto-migrate",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kevin Dion",
+            "email": "redbastie@icloud.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "laravel/framework": "^8.0",
+        "doctrine/dbal": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Redbastie\\LaravelAutoMigrate\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Redbastie\\LaravelAutoMigrate\\ServiceProvider"
+            ]
+        }
+    }
+}
